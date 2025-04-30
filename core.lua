@@ -32,9 +32,36 @@ local function m()
         local function GetFirstAvailableSpell(...)
             for i = 1, select("#", ...) do
                 local spell = select(i, ...)
+                -- Проверяем русское название
                 local spellID = GetSpellInfo(spell)
                 if spellID then 
                     return spellID 
+                end
+                -- Проверяем английское название
+                local enSpell = spell == "Неудержимость" and "Recklessness" or
+                               spell == "Удвоенное время" and "Double Time" or
+                               spell == "Вестник войны" and "War Banner" or
+                               spell == "Безудержное восстановление" and "Reckless Abandon" or
+                               spell == "Верная победа" and "Safeguard" or
+                               spell == "Второе дыхание" and "Second Wind" or
+                               spell == "Победный раж" and "Victory Rush" or
+                               spell == "Ошеломляющий крик" and "Disrupting Shout" or
+                               spell == "Пронзительный вой" and "Piercing Howl" or
+                               spell == "Разрушительный крик" and "Shattering Throw" or
+                               spell == "Вихрь клинков" and "Bladestorm" or
+                               spell == "Рев дракона" and "Dragon Roar" or
+                               spell == "Ударная волна" and "Shockwave" or
+                               spell == "Массовое отражение заклинания" and "Mass Spell Reflection" or
+                               spell == "Охрана" and "Safeguard" or
+                               spell == "Бдительность" and "Vigilance" or
+                               spell == "Аватара" and "Avatar" or
+                               spell == "Кровавая баня" and "Bloodbath" or
+                               spell == "Удар громовержца" and "Storm Bolt"
+                if enSpell then
+                    spellID = GetSpellInfo(enSpell)
+                    if spellID then
+                        return spellID
+                    end
                 end
             end
             return nil
