@@ -1,0 +1,5 @@
+## Interface: 50400
+## Dependencies: Blizzard_TalentUI
+## Title: FastSwitchTalantMOP
+core.lua
+if not IsAddOnLoaded("Blizzard_TalentUI") then LoadAddOn("Blizzard_TalentUI") end
