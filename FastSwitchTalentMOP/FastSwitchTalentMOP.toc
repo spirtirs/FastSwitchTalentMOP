@@ -1,0 +1,10 @@
+## Interface: 50400
+## Title: FastSwitchTalentMOP
+## Notes: Fast switch between talent specs
+## Author: Your Name
+## Version: 1.0
+## Dependencies: Blizzard_TalentUI
+## SavedVariables: FastSwitchTalentMOPDB
+
+core.lua
+if not IsAddOnLoaded("Blizzard_TalentUI") then LoadAddOn("Blizzard_TalentUI") end
