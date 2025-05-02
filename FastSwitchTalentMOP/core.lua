@@ -152,4 +152,3 @@ f:RegisterEvent("PLAYER_LOGIN")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:RegisterEvent("SPELLS_CHANGED")
 f:RegisterEvent("ACTIONBAR_SLOT_CHANGED")
-	
