@@ -53,7 +53,6 @@ f:SetScript("OnEvent", function(self, event, ...)
                                    spell == "Вестник войны" and "Warbringer" or
                                    spell == "Безудержное восстановление" and "Enraged regeneration" or
                                    spell == "Верная победа" and "Impending Victory" or
-                                   spell == "Второе дыхание" and "Second Wind" or
                                    spell == "Победный раж" and "Impending Victory" or
                                    spell == "Ошеломляющий крик" and "Staggering Shout" or
                                    spell == "Пронзительный вой" and "Piercing Howl" or
@@ -93,7 +92,6 @@ f:SetScript("OnEvent", function(self, event, ...)
                 local spell = GetFirstAvailableSpell(
                     "Безудержное восстановление",
                     "Верная победа",
-                    "Второе дыхание",
                     "Победный раж"
                 )
                 if spell then 
