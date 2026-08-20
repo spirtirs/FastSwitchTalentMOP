@@ -48,16 +48,16 @@ f:SetScript("OnEvent", function(self, event, ...)
                         return spellID 
                     end
                     -- Проверяем английское название
-                    local enSpell = spell == "Неудержимость" and "Recklessness" or
+                    local enSpell = spell == "Неудержимость" and "Jaggernaut" or
                                    spell == "Удвоенное время" and "Double Time" or
-                                   spell == "Вестник войны" and "War Banner" or
-                                   spell == "Безудержное восстановление" and "Reckless Abandon" or
-                                   spell == "Верная победа" and "Safeguard" or
+                                   spell == "Вестник войны" and "Warbringer" or
+                                   spell == "Безудержное восстановление" and "Enraged regeneration" or
+                                   spell == "Верная победа" and "Impending Victory" or
                                    spell == "Второе дыхание" and "Second Wind" or
-                                   spell == "Победный раж" and "Victory Rush" or
-                                   spell == "Ошеломляющий крик" and "Disrupting Shout" or
+                                   spell == "Победный раж" and "Impending Victory" or
+                                   spell == "Ошеломляющий крик" and "Staggering Shout" or
                                    spell == "Пронзительный вой" and "Piercing Howl" or
-                                   spell == "Разрушительный крик" and "Shattering Throw" or
+                                   spell == "Разрушительный крик" and "Disrupting Shout" or
                                    spell == "Вихрь клинков" and "Bladestorm" or
                                    spell == "Рев дракона" and "Dragon Roar" or
                                    spell == "Ударная волна" and "Shockwave" or
